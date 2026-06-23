@@ -81,17 +81,25 @@ Final Machine Code
 
 
 #Example Program
+
 #Input:
 
 let x = 3;
 
 if (x < 5)
+
 {
+
     let y = 1;
+
 }
+
 else
+
 {
+
     let y = 2;
+
 }
 
 return y;
