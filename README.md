@@ -98,13 +98,20 @@ return y;
 
 #Output:
 
+
+
+
 ===== SSA BUILDER =====
 
 ===== SSA STACK =====
+
+
 entry:
   x0
 
 ===== MEM2REG =====
+
+
 ALLOCA removed -> x
 STORE removed -> x
 LOAD replaced -> x
