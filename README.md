@@ -98,23 +98,22 @@ return y;
 
 #Output:
 
-
-
-
 ===== SSA BUILDER =====
 
 ===== SSA STACK =====
 
-
 entry:
+
   x0
 
 ===== MEM2REG =====
 
-
 ALLOCA removed -> x
+
 STORE removed -> x
+
 LOAD replaced -> x
+
 Removing ALLOCA -> x
 
 ===== PHI INSERTION =====
@@ -124,48 +123,73 @@ Checking frontier: merge
 Checking frontier: merge
 
 ===== SSA RENAME =====
+
 Visiting entry
+
 Visiting then
+
 Visiting merge
-Visiting else
-; ModuleID = 'NovaModule'
+
+Visiting else;
+
+ModuleID = 'NovaModule'
+
 source_filename = "NovaModule"
 
 define i32 @main() {
+
 entry:
+
   %0 = icmp slt i32 3, 5
+  
   br i1 %0, label %then, label %else
 
 then:                                             ; preds = %entry
+  
   br label %merge
 
 else:                                             ; preds = %entry
+  
   br label %merge
 
 merge:                                            ; preds = %else, %then
+  
   ret i32 0
+
 }
 
 ===== MACHINE CODE =====
+
 CMP R0, R1, R2
+
 BR then|else
+
 BR merge
+
 BR merge
+
 RET
 
 #Build Instructions:
 
 #Requirements:
+
 CMake
+
 LLVM (installed and configured)
+
 C++17 compatible compiler
 
 #Build Steps:
+
 mkdir build
+
 cd build
 
 cmake --build .
+
 #Run:
+
  .\Debug\NovaLang.exe
 
 
