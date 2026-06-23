@@ -1,5 +1,5 @@
 # NovaLang-LLVM-Based-Compiler-Backend
-Built a toy programming language compiler from scratch using C++ and LLVM. Put these keywords in your resume:  Compiler Design LLVM C++ Intermediate Representation (IR) Static Single Assignment (SSA) Dominator Tree Control Flow Graph (CFG) Optimization Passes Register Allocation Instruction Selection Backend Engineering
+Built a toy programming language compiler from scratch using C++ and LLVM.   Compiler Design LLVM C++ Intermediate Representation (IR) Static Single Assignment (SSA) Dominator Tree Control Flow Graph (CFG) Optimization Passes Register Allocation Instruction Selection Backend Engineering
 
 
 # NovaLang Compiler (LLVM-Based Mini Compiler)
